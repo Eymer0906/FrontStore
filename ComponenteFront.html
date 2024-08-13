@@ -18,16 +18,44 @@
         </div>
         <nav class="nav">
             <ul class="tab-container">
-                <li><button class="tab-button active" onclick="openTab(event, 'tab1')">Inicio</button></li>
-                <li><button class="tab-button" onclick="openTab(event, 'tab2')">Productos</button></li>
-                <li><button class="tab-button" onclick="openTab(event, 'tab3')">Ofertas</button></li>
-                <li><button class="tab-button" onclick="openTab(event, 'tab4')">Tiendas</button></li>
-                <li><button class="tab-button" onclick="openTab(event, 'tab5')">Registro</button></li>
+                <li><button class="tab-button" onclick="redirectToHome()">Inicio</button></li>
+                <li><button class="tab-button" onclick="redirectToProducts()">Productos</button></li>
+                <li><button class="tab-button" onclick="redirectToOfertas()">Ofertas</button></li>
+                <li><button class="tab-button" onclick="redirectToStores()">Tiendas</button></li>
+                <li><button class="tab-button" onclick="redirectToRegister()">Registro</button></li>
                 <li><button class="tab-button" onclick="openTab(event, 'tab6')">🛒 Carrito</button></li>
             </ul>
+            
         </nav>
-        
+        <script>
+            // Función para redirigir a las otras paginas
+            function redirectToHome() {
+                location.href = 'home.html';
+            }
+            function redirectToProducts() {
+                location.href = 'productos.html';
+            }
     
+            function redirectToOfertas(){
+                location.href='Ofertas.html';
+
+            }
+            
+            function redirectToStores(){
+                location.href='tiendas.html';
+
+            }
+            function redirectToRegister(){
+            location.href='registro.html';
+
+            }
+
+        </script>
+
+
+
+
+          
     </header>
     
 
@@ -86,6 +114,6 @@
             <li><a href="#contact">Contacto</a></li>
         </ul>
     </footer>
-
+    <script src="funciones.js"></script>
 </body>
 </html>
